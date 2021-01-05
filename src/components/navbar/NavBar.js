@@ -15,9 +15,9 @@ export default function NavBar() {
             <button className='searchButton'>{searchIcon}</button>
          </div>
          <div className='links'>
-            <p className='link'>Home</p>
-            <p className='link'>Productos</p>
-            <p className='link'>Nosotros</p>
+            <p className='link'>home</p>
+            <p className='link'>productos</p>
+            <p className='link'>nosotros</p>
          </div>
       </div>
    )

@@ -27,9 +27,11 @@
 }
 
 .search .standarInput {
-   border-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border: 1px solid #FFCA00;
+   border-top-left-radius: 10px;
    font-size: 1.5rem;
-   margin-right: 2%;
+   height: 3rem;
    padding: 2px;
    width: 60%;
 }
@@ -37,10 +39,12 @@
 .search .searchButton {
    color: #353535;
    background-color: #FFCA00;
+   border-bottom-right-radius: 10px;
    border: 1px solid #FFCA00;
-   border-radius: 5px;
+   border-top-right-radius: 10px;
+   height: 3rem;
    padding: 3px;
-   width: 2.5rem;
+   width: 3.25rem;
 }
 
 .search .searchButton:hover {
@@ -58,4 +62,8 @@
 
 .link {
    padding: 0 1.5rem;
+}
+
+.link:hover {
+   text-shadow: 2px 2px 5px white;
 }
