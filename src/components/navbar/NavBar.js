@@ -1,5 +1,6 @@
 import React from 'react'
 import './navbar.css'
+import logo from '../../assets/images/logoBSW.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,7 +9,7 @@ export default function NavBar() {
    return (
       <div className='header'>
          <div className='logo'>
-            <img src='../../Images/Bunker-Store-Logo-Blanci.png' />
+            <img src={logo} alt='logo' />
          </div>
          <div className='search'>
             <input className='standarInput' placeholder='Busca lo que quieras...'></input>
