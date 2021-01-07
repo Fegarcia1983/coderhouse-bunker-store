@@ -12,9 +12,12 @@
    justify-content: space-between;
 }
 
+.logo {
+   width: 27%;
+}
+
 .logo img {
-   height: 110px;
-   margin-left: 5%;
+   width: 100%;
 }
 
 .search {
@@ -48,23 +51,14 @@
 }
 
 .search .searchButton:hover {
+   color: #e9e9e9;
    background-color: #FF2D53;
    border: 1px solid #FF2D53;
 }
 
-.links {
-   align-self: center;
-   color: #c2c2c2;
-   display:flex;
+.chartUser {
+   width:20%;
+   display: flex;
    flex-wrap: wrap;
-   font-size: 2rem;
-}
-
-.link {
-   padding: 0 1.5rem;
-}
-
-.link:hover {
-   color:  #353535;
-   text-shadow: 2px 2px 5px white;
+   align-items: center;
 }
