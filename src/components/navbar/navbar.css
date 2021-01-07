@@ -34,8 +34,8 @@
    border: 1px solid #FFCA00;
    border-top-left-radius: 10px;
    font-size: 1.5rem;
-   height: 3rem;
-   padding: 2px;
+   height: 4rem;
+   padding: 3px;
    width: 60%;
 }
 
@@ -45,9 +45,9 @@
    border-bottom-right-radius: 10px;
    border: 1px solid #FFCA00;
    border-top-right-radius: 10px;
-   height: 3rem;
+   height: 4rem;
    padding: 3px;
-   width: 3.25rem;
+   width: 5rem;
 }
 
 .search .searchButton:hover {
