@@ -4,7 +4,7 @@ import logo from '../../assets/images/logoBSW.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { MenuButton } from './MenuButton'
-import { CharWidget } from './CharWidget'
+import { CartWidget } from './CartWidget'
 
 export default function NavBar() {
    const searchIcon = <FontAwesomeIcon icon={faSearch} size='2x'/>
@@ -18,8 +18,8 @@ export default function NavBar() {
             <input className='standarInput' placeholder='Busca lo que quieras...'></input>
             <button className='searchButton'>{searchIcon}</button>
          </div>
-         <div className='chartUser'>
-            <CharWidget />
+         <div className='cartUser'>
+            < CartWidget />
          </div>
       </div>
    )

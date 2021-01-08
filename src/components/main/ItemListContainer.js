@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const ItemListContainer = () => {
+export const ItemListContainer = ({greeting}) => {
    return (
       <div>
-         <h2>SOY EL COMPONENTE "ITEMLISTCONYAINER" IMPORTADO Y RENDERIZADO</h2>
+         <h2>{greeting}</h2>
       </div>
    )
 }
