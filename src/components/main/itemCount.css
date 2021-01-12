@@ -4,8 +4,8 @@
 
 .fg-itemCommand {
    display: flex;
-   flex-wrap: wrap;
    flex-direction: row;
+   flex-wrap: wrap;
    width: fit-content;
 }
 
@@ -16,6 +16,6 @@ button {
 
 input {
    height: 2rem;
-   width: 3rem;
    text-align: center;
+   width: 3rem;
 }

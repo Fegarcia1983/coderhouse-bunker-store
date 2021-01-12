@@ -1,10 +1,10 @@
 .fg-mainBody {
    background-color: #c2c2c2;
-   min-height: 70vh;
    display: flex;
-   flex-wrap: wrap;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: space-evenly;
+   min-height: 70vh;
    padding-top: 2%;
 }
 

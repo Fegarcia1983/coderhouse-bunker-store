@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { MenuButton } from './MenuButton'
 import { CartWidget } from './CartWidget'
+import { UserWidget } from './UserWidget'
 
 export default function NavBar() {
    const searchIcon = <FontAwesomeIcon icon={faSearch} size='2x'/>
@@ -20,6 +21,7 @@ export default function NavBar() {
          </div>
          <div className='cartUser'>
             < CartWidget />
+            < UserWidget />
          </div>
       </div>
    )

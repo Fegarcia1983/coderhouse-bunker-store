@@ -8,8 +8,8 @@
 }
 
 .logo {
-   width: 27%;
    background-color: #353535;
+   width: 27%;
 }
 
 .logo img {
@@ -27,20 +27,21 @@
 
 .search .standarInput {
    border-bottom-left-radius: 10px;
-   border: 1px solid #FFCA00;
    border-top-left-radius: 10px;
+   border: 1px solid #FFCA00;
    font-size: 1.5rem;
    height: 4rem;
    padding: 3px;
+   text-align: left;
    width: 60%;
 }
 
 .search .searchButton {
-   color: #353535;
    background-color: #FFCA00;
    border-bottom-right-radius: 10px;
-   border: 1px solid #FFCA00;
    border-top-right-radius: 10px;
+   border: 1px solid #FFCA00;
+   color: #353535;
    height: 4rem;
    padding: 3px;
    width: 5rem;
@@ -53,8 +54,9 @@
 }
 
 .cartUser {
-   width:20%;
+   align-items: center;
    display: flex;
    flex-wrap: wrap;
-   align-items: center;
+   justify-content: space-evenly;
+   width:20%;
 }
