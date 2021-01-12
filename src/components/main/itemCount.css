@@ -1,0 +1,21 @@
+.fg-itemCount {
+   width: fit-content;
+}
+
+.fg-itemCommand {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   width: fit-content;
+}
+
+button {
+   background: none;
+   border: none;
+}
+
+input {
+   height: 2rem;
+   width: 3rem;
+   text-align: center;
+}
