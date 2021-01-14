@@ -3,7 +3,6 @@
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: space-evenly;
    min-height: 70vh;
    padding-top: 2%;
 }

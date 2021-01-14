@@ -1,0 +1,9 @@
+.fg-itemCard {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+img {
+   border-radius: 15%;
+}
