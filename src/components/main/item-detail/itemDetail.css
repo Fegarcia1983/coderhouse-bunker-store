@@ -1,0 +1,35 @@
+.fg-itemDetail {
+   border: 1px solid black;
+   border-radius: 15px;
+   height: min-content;
+   padding: 3%;
+   width: 50%;
+}
+
+.fg-itemDetailUp {
+   display: flex;
+   flex-wrap: nowrap;
+   margin-bottom: 3%;
+   text-align: left;
+}
+
+.fg-itemDetailImg {
+   text-align: center;
+   width: 40%;
+}
+
+img {
+   border-radius: 15px;
+   width: 50%;
+}
+
+.fg-itemdetails {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.fg-itemDetailDescription {
+   text-align: justify;
+}

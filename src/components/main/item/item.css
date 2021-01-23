@@ -1,0 +1,65 @@
+.fg-itemCard {
+   width: 15%;
+}
+
+.fg-itemCard a {
+   align-items: center;
+   border-radius: 20px;
+   box-shadow: none;
+   color: black;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   text-align: justify;
+   text-decoration: none;
+   transition: all;
+   transition-duration: 1s;
+   width: 100%;
+}
+
+.fg-itemCard h4 {
+   font-size: 2rem;
+   transition: all;
+   transition-duration: 1s;
+}
+
+.fg-itemCard h5 {
+   font-size: 1.5rem;
+   transition: all;
+   transition-duration: 1s;
+}
+
+.fg-itemCard img {
+   border-radius: 20px;
+   object-fit: cover;
+   width: 100%;
+}
+
+.fg-description {
+   font-size: 1rem;
+   padding: 5%;
+   text-align: justify;
+   transition: all;
+   transition-duration: 1s;
+   width: 100%;
+}
+
+.fg-itemCard a:hover {
+   text-decoration: none;
+   color: black;
+   box-shadow: 13px 13px 30px whitesmoke;
+   z-index: 1;
+   width: 110%;
+}
+
+.fg-itemCard a:hover h4 {
+   font-size: 2.2rem;
+}
+
+.fg-itemCard a:hover h5 {
+   font-size: 1.65rem;
+}
+
+.fg-itemCard a:hover .fg-description {
+   font-size: 1.1rem;
+}

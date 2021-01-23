@@ -2,6 +2,8 @@ import React from 'react'
 import './menubutton.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+
 
 
 export const MenuButton = () => {
@@ -11,9 +13,9 @@ export const MenuButton = () => {
       <div className="dropdown">
          <div className="dropbtn"><span>{menuIcon}</span>MENU</div>
             <div className="dropdown-content">
-               <a href="#">home</a>
-               <a href="#">productos</a>
-               <a href="#">nosotros</a>
+               <Link to={'/'}>home</Link>
+               <Link to={'/products'}>productos</Link>
+               <Link to={'/us'}>nosotros</Link>
             </div>
       </div>
    )

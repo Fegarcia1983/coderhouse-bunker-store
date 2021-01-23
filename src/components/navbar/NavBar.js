@@ -3,9 +3,9 @@ import './navbar.css'
 import logo from '../../assets/images/logoBSW.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { MenuButton } from './MenuButton'
-import { CartWidget } from './CartWidget'
-import { UserWidget } from './UserWidget'
+import { MenuButton } from './menu-button/MenuButton'
+import { CartWidget } from './cart-widget/CartWidget'
+import { UserWidget } from './user-widget/UserWidget'
 
 export default function NavBar() {
    const searchIcon = <FontAwesomeIcon icon={faSearch} size='2x'/>
