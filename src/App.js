@@ -17,7 +17,7 @@ function App() {
         < NavBar />
           <Switch>
             <Route path='/products/:id' component={ ItemDetailContainer }/>
-            <Route path='/products/:id' component={ ItemListContainer }/>
+            <Route path='/category/:id' component={ ItemListContainer }/>
             <Route path='/' component={ ItemListContainer } />
           </Switch>
       </Router>
