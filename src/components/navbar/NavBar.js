@@ -18,7 +18,7 @@ export default function NavBar() {
       <div className='header'>
          < MenuButton />
          <div className='logo'>
-            <Link to="/"><img src={logo} alt='logo' /></Link>
+            <Link to={'/'}><img src={logo} alt='logo' /></Link>
          </div>
          <div className='search'>
             <input className='standarInput' placeholder='Busca lo que quieras...'></input>
