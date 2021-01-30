@@ -7,7 +7,11 @@ import './itemDetail.css'
 
 
 export const ItemDetail = ({product}) => {
+
    const backIcon = <FontAwesomeIcon icon={faArrowAltCircleLeft} size='3x'/>
+
+   const AddOn = ( qty ) => alert(`¡¡¡${qty} al carritoooooo!!!`);
+
    return (
       <div className="fg-itemDetail">
          <div className="fg-itemDetailUp">
@@ -24,7 +28,7 @@ export const ItemDetail = ({product}) => {
          <div>
             <p className="fg-itemDetailDescription">{product.description}</p>
          </div>
-         < ItemCountContainer />
+         < ItemCountContainer AddOn={ AddOn  }/>
       </div>
    )
 }

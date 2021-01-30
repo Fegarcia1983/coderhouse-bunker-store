@@ -10,7 +10,7 @@
    width: fit-content;
 }
 
-button {
+.fg-itemCommand button {
    background: none;
    border: none;
 }

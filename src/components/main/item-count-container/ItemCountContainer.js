@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { ItemCount } from '../item-count/ItemCount'
 import './itemCountContainer.css'
 
-export const ItemCountContainer = ( { stock=10, initial=1, onAdd=1 } ) => {
+export const ItemCountContainer = ( { stock=10, initial=1, onAdd=1, AddOn } ) => {
 
    const [value, setValue] = useState(initial)
 
@@ -25,6 +25,9 @@ export const ItemCountContainer = ( { stock=10, initial=1, onAdd=1 } ) => {
          />
          <div>
             <p>Stock: {stock}</p>
+         </div>
+         <div className="fg-buyButtonContainer">
+            <button className="fg-buyButton" onClick={ () => AddOn(value) }>I want it all!</button>
          </div>
       </div>
    )
