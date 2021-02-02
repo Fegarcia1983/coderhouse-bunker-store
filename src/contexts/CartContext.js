@@ -11,20 +11,14 @@ export const Context = ( { children } ) => {
    const qtyInCart = cart.reduce(( acc, curr) => { return acc + curr.qty},0)
 
    const addOrder = ( order ) => {
-      if (itemsInCart === 0) {
-         setCart([
-            ...cart,
-            order
-         ])
-      } else if (cart.find( item => item.product.id === order.product.id)) {
+      if (cart.find( item => item.product.id === order.product.id)) {
          alert('Este material ya se encuentra en el carrito de compra, para modificar la cantidad a comprar ve al carrito')
       } else {
-         setCart([
+         etCart([
             ...cart,
             order
          ])
       }
-   }
 
    return(
       < CartContext.Provider value={ { cart, itemsInCart, addOrder, qtyInCart } } >
