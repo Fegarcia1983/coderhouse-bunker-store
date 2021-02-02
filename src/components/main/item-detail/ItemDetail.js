@@ -6,11 +6,9 @@ import { faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import './itemDetail.css'
 
 
-export const ItemDetail = ({product}) => {
+export const ItemDetail = ( { product } ) => {
 
    const backIcon = <FontAwesomeIcon icon={faArrowAltCircleLeft} size='3x'/>
-
-   const AddOn = ( qty ) => alert(`¡¡¡${qty} al carritoooooo!!!`);
 
    return (
       <div className="fg-itemDetail">
@@ -28,7 +26,7 @@ export const ItemDetail = ({product}) => {
          <div>
             <p className="fg-itemDetailDescription">{product.description}</p>
          </div>
-         < ItemCountContainer AddOn={ AddOn  }/>
+         < ItemCountContainer product={ product }/>
       </div>
    )
 }

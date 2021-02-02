@@ -1,12 +1,21 @@
-.logos {
-   background-color: #CACACACA;
-   border-radius: 25%;
-   filter: invert(0);
-   transition-duration: 1s;
-   transition-property: filter;
-   width: 20%;
+.fg-cartNumber {
+   background-color: #FFCA00;
+   border-radius: 100px;
+   color: #353535;
+   font-weight: bold;
+   padding: 0% 3%;
+   position: absolute;
+   bottom: 2%;
+   left: 36%;
 }
 
-.logos:hover {
-   filter:invert(1);
+.fg-qtyNumber {
+   background-color: #FF2D53;
+   border-radius: 100px;
+   color: #353535;
+   font-weight: bold;
+   padding: 0% 3%;
+   position: absolute;
+   bottom: 2%;
+   left: 55%;
 }

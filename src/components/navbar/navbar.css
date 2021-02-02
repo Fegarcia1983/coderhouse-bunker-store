@@ -59,4 +59,10 @@
    flex-wrap: wrap;
    justify-content: space-evenly;
    width:20%;
+   position: relative;
+}
+
+.cartUser a {
+   width: 50%;
+   position: relative;
 }

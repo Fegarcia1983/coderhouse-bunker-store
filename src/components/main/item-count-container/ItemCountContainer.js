@@ -1,33 +1,46 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { ItemCount } from '../item-count/ItemCount'
+import { CartContext } from '../../../contexts/CartContext'
 import './itemCountContainer.css'
 
-export const ItemCountContainer = ( { stock=10, initial=1, onAdd=1, AddOn } ) => {
+export const ItemCountContainer = ( { product } ) => {
 
-   const [value, setValue] = useState(initial)
+   const { cart, addOrder } = useContext(CartContext);
 
-   const handlePlus = () => {
-      !(value === stock) && setValue(value + onAdd)
+   const [order, setOrder] = useState({
+      product: product,
+      qty:0
+   });
+
+   const { qty } = order;
+
+   const addQtyHandler = () => {
+      (qty!==product.stock) &&
+      setOrder({
+         ...order,
+         qty: qty + 1
+      })
    }
 
-   const handleMinus = () => {
-      !(value === onAdd) && setValue(value -onAdd)
+   const subQtyHandler = () => {
+      (qty!==0) &&
+      setOrder({
+         ...order,
+         qty: qty - 1
+      })
    }
 
    return (
       <div className="fg-counter">
-         < ItemCount
-            value={ value }
-            stock={ stock }
-            initial={ initial }
-            handlePlus={ handlePlus }
-            handleMinus={ handleMinus }
-         />
+         < ItemCount stock={ product.stock } order={ order } addQtyHandler={addQtyHandler} subQtyHandler={subQtyHandler}/>
          <div>
-            <p>Stock: {stock}</p>
+            <p>Stock: { product.stock }</p>
          </div>
          <div className="fg-buyButtonContainer">
-            <button className="fg-buyButton" onClick={ () => AddOn(value) }>I want it all!</button>
+            {
+               qty>0 &&
+               <button className="fg-buyButton" onClick={()=>addOrder(order)}>I want {qty}!!! </button>
+            }
          </div>
       </div>
    )

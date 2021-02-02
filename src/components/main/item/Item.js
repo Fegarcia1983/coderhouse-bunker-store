@@ -2,24 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import './item.css';
 
-export const Item = ({imgSrc, imgAlt, title, brand,  price, description, id}) => {
+export const Item = ({product}) => {
+
    return (
       <div className="fg-itemCard">
          <Link to={{
-            pathname: `/products/${id}`,
-            product: {
-               imgSrc: imgSrc,
-               title: title,
-               brand: brand,
-               price: price,
-               description: description
-            }
+            pathname: `/products/${product.id}`,
+            product: { product }
          }} >
-            <img src={imgSrc} alt={imgAlt} />
-            <h4>{title}</h4>
-            <h5>{brand}</h5>
-            <p>${price}</p>
-            <p className="fg-description">{description}</p>
+            <img src={product.imgSrc} alt={product.imgAlt} />
+            <h4>{product.title}</h4>
+            <h5>{product.brand}</h5>
+            <p>${product.price}</p>
+            <p className="fg-description">{product.description}</p>
          </Link>
       </div>
    )
