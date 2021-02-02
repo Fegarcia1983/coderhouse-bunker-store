@@ -1,0 +1,19 @@
+table {
+   width: 60%;
+}
+
+.fg-cartContainer button {
+   margin-top: 50%;
+}
+
+.fg-cartContainer {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+}
+
+.fg-cartContainer img {
+   border-radius: 15px;
+   object-fit: cover;
+   width: 200px;
+}

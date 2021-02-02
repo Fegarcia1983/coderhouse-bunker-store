@@ -6,7 +6,7 @@ import './cartwidget.css'
 
 export const CartWidget = () => {
 
-   const { itemsInCart, qtyInCart} = useContext(CartContext);
+   const { itemsInCart, qtyInCart } = useContext(CartContext);
 
    return (
       <>
