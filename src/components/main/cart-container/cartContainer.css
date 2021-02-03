@@ -1,9 +1,32 @@
+body {
+   background-color: #c2c2c2;
+}
 table {
    width: 60%;
 }
+.fg-cartContainer table{
+   width: 70%;
+   text-align: center;
+}
 
-.fg-cartContainer button {
-   margin-top: 50%;
+.fg-cartContainer th, td {
+   padding: 0.3rem;
+}
+
+.fg-cartContainer thead {
+   font-size: 1.5rem;
+}
+
+.fg-cartContainer tbody {
+   font-size: 1.2rem;
+}
+
+.fg-cartContainer tbody tr {
+   border-bottom: 1px solid #ddd;
+}
+
+.fg-cartContainer tbody tr:hover {
+   background-color: #f5f5f5;
 }
 
 .fg-cartContainer {
@@ -13,7 +36,55 @@ table {
 }
 
 .fg-cartContainer img {
+   border: solid #353535 1px;
    border-radius: 15px;
    object-fit: cover;
-   width: 200px;
+   height: 150px;
+   width: 150px;
+}
+
+.fg-cartDescription {
+   text-align: left;
+}
+
+.fg-itemDelete {
+   background-color: hsl(0, 0%, 21%);
+   color: #e9e9e9;
+   font-weight: bold;
+   padding: 3px 10px;
+}
+
+.fg-itemDelete:hover {
+   background-color: #FFCA00;
+   color:  hsl(0, 0%, 21%);
+}
+
+.fg-cartDelete {
+   background-color: hsl(0, 0%, 21%);
+   color: #e9e9e9;
+   font-size: 1rem;
+   font-weight: bold;
+   padding: 3px 10px;
+}
+
+.fg-cartDelete:hover {
+   background-color: #FF2D53;
+   color:  hsl(0, 0%, 21%);
+}
+.fg-emtyCart {
+   position: relative;
+}
+
+.fg-emtyCart img {
+   height: 600px !important;
+   width: 100% !important
+}
+
+.fg-emtyCart span {
+   font-weight: bolder;
+   color: #FFCA00;
+   font-size: 3rem;
+   position: absolute;
+   top: 45%;
+   left: 8%;
 }

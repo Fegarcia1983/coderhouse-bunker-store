@@ -5,7 +5,7 @@ import './itemCountContainer.css'
 
 export const ItemCountContainer = ( { product } ) => {
 
-   const { cart, addOrder } = useContext(CartContext);
+   const { addOrder } = useContext(CartContext);
 
    const [order, setOrder] = useState({
       product: product,

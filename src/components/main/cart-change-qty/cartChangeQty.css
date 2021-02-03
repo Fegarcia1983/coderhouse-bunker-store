@@ -1,0 +1,27 @@
+.fg-changeCount {
+   align-self: center;
+   width: fit-content;
+}
+
+.fg-changeCommand {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: fit-content;
+}
+
+.fg-changeCommand button {
+   background: none;
+   border: none;
+   font-size: 1rem;
+}
+
+.fg-buttonDisabled {
+   color: #FF2D53;
+}
+
+input {
+   height: 1.75rem;
+   text-align: center;
+   width: 2rem;
+}
