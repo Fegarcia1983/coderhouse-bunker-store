@@ -1,9 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { ItemCount } from '../item-count/ItemCount'
 import { CartContext } from '../../../contexts/CartContext'
 import './itemCountContainer.css'
 
 export const ItemCountContainer = ( { product } ) => {
+
+   console.log(product);
 
    const { addOrder } = useContext(CartContext);
 
@@ -11,6 +13,13 @@ export const ItemCountContainer = ( { product } ) => {
       product: product,
       qty:0
    });
+
+   useEffect(() => {
+      setOrder({
+         ...order,
+         product: product,
+      })
+   }, [product])
 
    const { qty } = order;
 
@@ -29,6 +38,8 @@ export const ItemCountContainer = ( { product } ) => {
          qty: qty - 1
       })
    }
+
+   console.log(order);
 
    return (
       <div className="fg-counter">

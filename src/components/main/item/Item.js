@@ -6,10 +6,7 @@ export const Item = ({product}) => {
 
    return (
       <div className="fg-itemCard">
-         <Link to={{
-            pathname: `/products/${product.id}`,
-            product: { product }
-         }} >
+         <Link to={`/products/${product.id}`} >
             <img src={product.imgSrc} alt={product.imgAlt} />
             <h4>{product.title}</h4>
             <h5>{product.brand}</h5>

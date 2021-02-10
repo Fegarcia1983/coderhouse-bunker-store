@@ -11,7 +11,7 @@ export const CartTableItem = ({ item, productRecibed }) => {
          <td>{item}</td>
          <td><img src={product.imgSrc} alt={product.imgAlt} /></td>
          <td className="fg-cartDescription">{product.description}</td>
-         <td>{(product.price).toFixed(2)}</td>
+         <td>{Number(product.price).toFixed(2)}</td>
          <td>< CartChangeQty item={ item }/></td>
          <td>{(qty*product.price).toFixed(2)}</td>
          <td>< CartDeleteButton item={ item } /></td>
