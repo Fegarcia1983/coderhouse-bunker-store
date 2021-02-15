@@ -5,8 +5,6 @@ import './itemCountContainer.css'
 
 export const ItemCountContainer = ( { product } ) => {
 
-   console.log(product);
-
    const { addOrder } = useContext(CartContext);
 
    const [order, setOrder] = useState({
@@ -38,8 +36,6 @@ export const ItemCountContainer = ( { product } ) => {
          qty: qty - 1
       })
    }
-
-   console.log(order);
 
    return (
       <div className="fg-counter">
