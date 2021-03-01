@@ -10,8 +10,8 @@ export const CartChangeQty =  ( { item } ) => {
 
    const { cart, changeQty} = useContext(CartContext)
 
-   const plusItem = <FontAwesomeIcon icon={faPlusSquare} size='1.5x'/>
-   const minusItem = <FontAwesomeIcon icon={faMinusSquare} size='1.5x'/>
+   const plusItem = <FontAwesomeIcon icon={faPlusSquare} size='1x'/>
+   const minusItem = <FontAwesomeIcon icon={faMinusSquare} size='1x'/>
 
    return (
       <div className='fg-changeCount'>

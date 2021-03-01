@@ -51,8 +51,6 @@ export const BuyForm = () => {
          .catch((error) => console.log('Error: ',error))
    }
 
-   console.log(order);
-
    return (
       <form className="fg-buyForm">
          <h3>Finaliza tu compra</h3>
