@@ -14,7 +14,7 @@ export const BuyForm = () => {
    const [ order, setOrder ] = useState({})
    const [ orderId, setOrderId ] = useState('')
 
-   const { cart, totalInCart } = useContext(CartContext)
+   const { cart, totalInCart, qtyInCart, deleteItem } = useContext(CartContext)
 
    const { name, phone, mail } = info;
 
@@ -46,12 +46,13 @@ export const BuyForm = () => {
                let documento = itemDb.doc(item.product.id)
                let actualStock = item.product.stock - item.qty
                documento.update({stock: actualStock})
+               alert(`Felicitaciones se generó la orden Nº${id}`)
+               deleteItem(1, qtyInCart)
+               window.location.replace('/')
             })
          })
          .catch((error) => console.log('Error: ',error))
    }
-
-   console.log(order);
 
    return (
       <form className="fg-buyForm">
