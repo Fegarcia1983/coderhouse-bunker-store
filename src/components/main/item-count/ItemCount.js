@@ -6,8 +6,8 @@ import './itemCount.css'
 
 export const ItemCount =  ( {stock, order, addQtyHandler, subQtyHandler} ) => {
 
-   const plusItem = <FontAwesomeIcon icon={faPlusSquare} size='2x'/>
-   const minusItem = <FontAwesomeIcon icon={faMinusSquare} size='2x'/>
+   const plusItem = <FontAwesomeIcon icon={faPlusSquare} size='1x'/>
+   const minusItem = <FontAwesomeIcon icon={faMinusSquare} size='1x'/>
 
    return (
       <div className='fg-itemCount'>

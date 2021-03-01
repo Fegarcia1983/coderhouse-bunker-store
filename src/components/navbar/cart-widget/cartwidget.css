@@ -2,20 +2,22 @@
    background-color: #FFCA00;
    border-radius: 100px;
    color: #353535;
+   font-size: 0.7rem;
    font-weight: bold;
-   padding: 0% 3%;
+   padding: 0% 4%;
    position: absolute;
-   bottom: 2%;
-   left: 36%;
+   bottom: 13%;
+   left: 55%;
 }
 
 .fg-qtyNumber {
    background-color: #FF2D53;
    border-radius: 100px;
    color: #353535;
+   font-size: 0.7rem;
    font-weight: bold;
-   padding: 0% 3%;
+   padding: 0% 4%;
    position: absolute;
-   bottom: 2%;
+   bottom: -20%;
    left: 55%;
 }

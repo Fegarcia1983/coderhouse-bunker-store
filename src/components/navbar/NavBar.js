@@ -13,7 +13,7 @@ import logo from '../../assets/images/logoBSW.png'
 import './navbar.css'
 
 export default function NavBar() {
-   const searchIcon = <FontAwesomeIcon icon={faSearch} size='2x'/>
+   const searchIcon = <FontAwesomeIcon icon={faSearch} size='1x'/>
    return (
       <div className='header'>
          < MenuButton />

@@ -8,7 +8,7 @@ import './itemDetail.css'
 
 export const ItemDetail = ( { product } ) => {
 
-   const backIcon = <FontAwesomeIcon icon={faArrowAltCircleLeft} size='3x'/>
+   const backIcon = <FontAwesomeIcon icon={faArrowAltCircleLeft} size='2x'/>
 
    return (
       <div className="fg-itemDetail">

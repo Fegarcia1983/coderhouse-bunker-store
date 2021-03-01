@@ -18,26 +18,26 @@
 }
 
 .fg-itemCard h4 {
-   font-size: 2rem;
+   font-size: 1rem;
    transition: all;
    transition-duration: 1s;
 }
 
 .fg-itemCard h5 {
-   font-size: 1.5rem;
+   font-size: 0.8rem;
    transition: all;
    transition-duration: 1s;
 }
 
 .fg-itemCard img {
    border-radius: 20px;
-   height: 300px;
+   height: 170px;
    object-fit: cover;
    width: 100%;
 }
 
 .fg-description {
-   font-size: 1rem;
+   font-size: 0.6rem;
    padding: 5%;
    text-align: justify;
    transition: all;
@@ -54,13 +54,13 @@
 }
 
 .fg-itemCard a:hover h4 {
-   font-size: 2.2rem;
+   font-size: 1.1rem;
 }
 
 .fg-itemCard a:hover h5 {
-   font-size: 1.65rem;
+   font-size: 0.88rem;
 }
 
 .fg-itemCard a:hover .fg-description {
-   font-size: 1.1rem;
+   font-size: 0.66rem;
 }

@@ -29,11 +29,11 @@
    border-bottom-left-radius: 10px;
    border-top-left-radius: 10px;
    border: 1px solid #FFCA00;
-   font-size: 1.5rem;
-   height: 4rem;
+   font-size: 0.75rem;
+   height: 2rem;
    padding: 3px;
    text-align: left;
-   width: 60%;
+   width: 50%;
 }
 
 .search .searchButton {
@@ -42,7 +42,7 @@
    border-top-right-radius: 10px;
    border: 1px solid #FFCA00;
    color: #353535;
-   height: 4rem;
+   height: 2rem;
    padding: 3px;
    width: 5rem;
 }

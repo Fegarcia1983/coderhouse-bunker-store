@@ -5,7 +5,7 @@ table {
    width: 60%;
 }
 .fg-cartContainer table{
-   width: 60%;
+   width: 75%;
    text-align: center;
 }
 
@@ -13,8 +13,12 @@ table {
    padding: 0.3rem;
 }
 
+.fg-cartContainer td {
+   font-size: 0.8rem;
+}
+
 .fg-cartContainer thead {
-   font-size: 1.5rem;
+   font-size: 1.25rem;
 }
 
 .fg-cartContainer tbody {
@@ -39,19 +43,21 @@ table {
    border: solid #353535 1px;
    border-radius: 15px;
    object-fit: cover;
-   height: 150px;
-   width: 150px;
+   height: 140px;
+   width: 140px;
 }
 
 .fg-cartDescription {
+   font-size: 0.65rem;
    text-align: left;
 }
 
 .fg-itemDelete {
    background-color: hsl(0, 0%, 21%);
    color: #e9e9e9;
+   font-size: 0.9rem;
    font-weight: bold;
-   padding: 3px 10px;
+   padding: 2px 8px;
 }
 
 .fg-itemDelete:hover {
@@ -62,9 +68,9 @@ table {
 .fg-cartDelete {
    background-color: hsl(0, 0%, 21%);
    color: #e9e9e9;
-   font-size: 1rem;
+   font-size: 0.9rem;
    font-weight: bold;
-   padding: 3px 10px;
+   padding: 2px 8px;
 }
 
 .fg-cartDelete:hover {
@@ -97,29 +103,34 @@ table {
    width: 20%;
 }
 
+.fg-buyForm h3 {
+   font-size: 1.5rem;
+}
+
 .fg-buyForm button {
    background-color: hsl(0, 0%, 21%);
    color: #e9e9e9;
    font-size: 1rem;
    font-weight: bold;
+   margin-top: 1rem;
    padding: 3px 10px;
 }
 
 .fg-buyForm label {
    align-self: flex-start;
-   font-size: 1.5rem;
+   font-size: 1rem;
    font-weight: bold;
 }
 
 .fg-buyForm input {
    align-self: center;
-   font-size: 1.25rem;
+   font-size: 0.9rem;
    width: 75%;
 }
 
 .fg-buyForm button:disabled {
    background-color: #FF2D53;
-   margin-top: 2rem;
+   margin-top: 1rem;
    text-decoration: line-through;
 }
 
